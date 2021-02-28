@@ -8,28 +8,6 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
-<!-- PROJECT LOGO -->
-<br />
-<p align="center">
-  <a href="https://github.com/iamaydan/project-readme-template">
-    <img src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png" alt="Logo" width="80" height="80">
-  </a>
-
-  <h3 align="center">My Project</h3>
-
-  <p align="center">
-    Description of my project
-    <br />
-    <br />
-    <a href="https://github.com/iamaydan/project-readme-template">View Demo</a>
-    ·
-    <a href="https://github.com/iamaydan/project-readme-template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/iamaydan/project-readme-template/issues">Request Feature</a>
-  </p>
-</p>
-
-
 ## About The Project
 
 <p align="center">
