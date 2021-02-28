@@ -33,7 +33,7 @@
 ## About The Project
 
 <p align="center">
-   <img src="https://preview.redd.it/4w4v1oi3yzo41.png?width=2368&format=png&auto=webp&s=85d2c795f41203eb07c498ca2ffea1cf6b81a405" alt="Screenshot">
+   <img src="https://www.udemy.com/staticx/udemy/images/v6/default-meta-image.png" alt="Screenshot">
 </p>
 
 There are so many README templates, builders and etc., however I couldn't find the one I needed. So I created this one for using in my projects as a template. It's not completely what I needed, but anyway, works for now. This project is available for anyone on the web and any contribution is greatly welcome. Contributions are what make the open source community such an amazing place to be learn, inspire, and create. © 
