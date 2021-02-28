@@ -14,14 +14,7 @@
    <img src="https://www.udemy.com/staticx/udemy/images/v6/default-meta-image.png" alt="Screenshot">
 </p>
 
-There are so many README templates, builders and etc., however I couldn't find the one I needed. So I created this one for using in my projects as a template. It's not completely what I needed, but anyway, works for now. This project is available for anyone on the web and any contribution is greatly welcome. Contributions are what make the open source community such an amazing place to be learn, inspire, and create. © 
-
-
-## Packages, libraries, modules and more
-
-* [Kotlin Coroutines](https://kotlinlang.org/docs/coroutines-guide.html)
-* [Retrofit](https://github.com/square/retrofit)
-* [Firebase](https://firebase.google.com/docs)
+This repository includes source codes of 4 Udemy courses given by our company. This project is available for anyone on the web and any contribution is greatly welcome. Contributions are what make the open source community such an amazing place to be learn, inspire, and create.
 
 
 ## Getting Started
