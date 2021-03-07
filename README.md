@@ -8,8 +8,6 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
-## About The Project
-
 <p align="center">
    <img src="https://www.udemy.com/staticx/udemy/images/v6/default-meta-image.png" alt="Screenshot">
 </p>
@@ -18,21 +16,21 @@ This repository includes source codes of four [Udemy](https://www.udemy.com/) co
 
 ## Table of Contents
 
-### #️⃣ Training 1
+### #️⃣ [Training 1]
 
-1. Course: [Android Jetpack, Clean Architecture & Testing Masterclass](https://www.udemy.com/course/android-architecture-componentsmvvm-with-dagger-retrofit/)
+ Course: [Android Jetpack, Clean Architecture & Testing Masterclass](https://www.udemy.com/course/android-architecture-componentsmvvm-with-dagger-retrofit/)
 
-### #️⃣ Training 2
+### #️⃣ [Training 2]
 
-1. Course: [Git Essentials — The step-by-step guide to Git mastery](https://www.udemy.com/course/git-and-github-tutorial/)
+ Course: [Git Essentials — The step-by-step guide to Git mastery](https://www.udemy.com/course/git-and-github-tutorial/)
 
-### #️⃣ Training 3
+### #️⃣ [Training 3]
 
-1. Course: [Android Firebase Masterclass - Master Google Firebase](https://www.udemy.com/course/android-firebase-masterclass/)
+ Course: [Android Firebase Masterclass - Master Google Firebase](https://www.udemy.com/course/android-firebase-masterclass/)
 
-### #️⃣ Training 4
+### #️⃣ [Training 4](https://github.com/iamaydan/IBAR-Trainings/tree/master/2020%20Training%20-%204%20)
 
-1. Course: [Android Testing: Unit Tests, Hilt, ViewModels and more!](https://www.udemy.com/course/android-testing/)
+ Course: [Android Testing: Unit Tests, Hilt, ViewModels and more!](https://www.udemy.com/course/android-testing/)
 
 
 ## Getting Started
