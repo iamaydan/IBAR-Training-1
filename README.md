@@ -42,9 +42,9 @@ To get a local copy and running, follow the steps below.
 DRAFT:
 * This app runs on all major operating systems and requires [Java JDK](https://adoptopenjdk.net) version 8 or higher to be installed. To check, run 
 
-  ```sh
-  java -version
-  ```
+```sh
+java -version
+```
 
 ### Installation
 
