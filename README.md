@@ -23,54 +23,37 @@ To get a local copy and running, follow the steps below.
 
 ### Prerequisites
 
+DRAFT:
 * This app runs on all major operating systems and requires [Java JDK](https://adoptopenjdk.net) version 8 or higher to be installed. To check, run 
 
   ```sh
   java -version
   ```
 
-* [npm](https://www.npmjs.com/get-npm) 
-
-  ```sh
-  npm install npm@latest -g
-  ```
-
 ### Installation
 
-1. [Clone](https://git-scm.com) the repo 
+   [Clone](https://git-scm.com) the repo 
 
    ```sh
-   git clone https://github.com/iamaydan/project-readme-template.git
+   git clone https://github.com/iamaydan/IBAR-Trainings.git
    ``` 
    
    If you're using [GitHub CLI](https://cli.github.com), you can also use the code below. 
 
    ```sh
-   gh repo clone iamaydan/project-readme-template
-   ```
-   
-2. [Install](https://docs.npmjs.com/cli/v6/commands/npm-install) npm packages
-
-   ```sh
-   npm install
+   gh repo clone iamaydan/IBAR-Trainings
    ```
 
 
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources. 
+DRAFT: Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources. 
 
 
 ## Acknowledgements
 
+DRAFT: 
 * [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
 
 
 # Contribution
