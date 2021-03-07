@@ -37,15 +37,6 @@ This repository includes source codes of four [Udemy](https://www.udemy.com/) co
 
 To get a local copy and running, follow the steps below.
 
-### Prerequisites
-
-DRAFT:
-* This app runs on all major operating systems and requires [Java JDK](https://adoptopenjdk.net) version 8 or higher to be installed. To check, run 
-
-```sh
-java -version
-```
-
 ### Installation
 
    [Clone](https://git-scm.com) the repo 
