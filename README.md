@@ -14,7 +14,25 @@
    <img src="https://www.udemy.com/staticx/udemy/images/v6/default-meta-image.png" alt="Screenshot">
 </p>
 
-This repository includes source codes of 4 Udemy courses given by our company. This project is available for anyone on the web and any contribution is greatly welcome. Contributions are what make the open source community such an amazing place to be learn, inspire, and create.
+This repository includes source codes of four [Udemy](https://www.udemy.com/) courses given by our company. This project is available for anyone on the web and any contribution is greatly welcome. Contributions are what make the open source community such an amazing place to be learn, inspire, and create.
+
+## Table of Contents
+
+### #️⃣ Training 1
+
+1. Course: [Android Jetpack, Clean Architecture & Testing Masterclass](https://www.udemy.com/course/android-architecture-componentsmvvm-with-dagger-retrofit/)
+
+### #️⃣ Training 2
+
+1. Course: [Git Essentials — The step-by-step guide to Git mastery](https://www.udemy.com/course/git-and-github-tutorial/)
+
+### #️⃣ Training 3
+
+1. Course: [Android Firebase Masterclass - Master Google Firebase](https://www.udemy.com/course/android-firebase-masterclass/)
+
+### #️⃣ Training 4
+
+1. Course: [Android Testing: Unit Tests, Hilt, ViewModels and more!](https://www.udemy.com/course/android-testing/)
 
 
 ## Getting Started
