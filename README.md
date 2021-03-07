@@ -16,19 +16,19 @@ This repository includes source codes of four [Udemy](https://www.udemy.com/) co
 
 ## Table of Contents
 
-### #️⃣ [Training 1]
+### #️⃣ [Training 1](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-1)
 
  Course: [Android Jetpack, Clean Architecture & Testing Masterclass](https://www.udemy.com/course/android-architecture-componentsmvvm-with-dagger-retrofit/)
 
-### #️⃣ [Training 2]
+### #️⃣ [Training 2](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-2)
 
  Course: [Git Essentials — The step-by-step guide to Git mastery](https://www.udemy.com/course/git-and-github-tutorial/)
 
-### #️⃣ [Training 3]
+### #️⃣ [Training 3](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-3)
 
  Course: [Android Firebase Masterclass - Master Google Firebase](https://www.udemy.com/course/android-firebase-masterclass/)
 
-### #️⃣ [Training 4](https://github.com/iamaydan/IBAR-Trainings/tree/master/2020%20Training%20-%204%20)
+### #️⃣ [Training 4](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-4)
 
  Course: [Android Testing: Unit Tests, Hilt, ViewModels and more!](https://www.udemy.com/course/android-testing/)
 
