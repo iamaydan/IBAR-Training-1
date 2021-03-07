@@ -84,16 +84,16 @@ Licensed under [Apache-2.0](http://www.apache.org/licenses/LICENSE-2.0).
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[contributors-shield]: https://img.shields.io/github/contributors/iamaydan/project-readme-template.svg?style=for-the-badge
-[contributors-url]: https://github.com/iamaydan/project-readme-template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/iamaydan/project-readme-template.svg?style=for-the-badge
-[forks-url]: https://github.com/iamaydan/project-readme-template/network/members
-[stars-shield]: https://img.shields.io/github/stars/iamaydan/project-readme-template.svg?style=for-the-badge
-[stars-url]: https://github.com/iamaydan/project-readme-template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/iamaydan/project-readme-template.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/iamaydan/IBAR-Trainings.svg?style=for-the-badge
+[contributors-url]: https://github.com/iamaydan/IBAR-Trainings/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/iamaydan/IBAR-Trainings.svg?style=for-the-badge
+[forks-url]: https://github.com/iamaydan/IBAR-Trainings/network/members
+[stars-shield]: https://img.shields.io/github/stars/iamaydan/IBAR-Trainings.svg?style=for-the-badge
+[stars-url]: https://github.com/iamaydan/IBAR-Trainings/stargazers
+[issues-shield]: https://img.shields.io/github/issues/iamaydan/IBAR-Trainings.svg?style=for-the-badge
 [issues-url]: https://github.com/iamaydan/project-readme-template/issues
-[license-shield]: https://img.shields.io/github/license/iamaydan/project-readme-template.svg?style=for-the-badge
-[license-url]: https://github.com/iamaydan/project-readme-template/blob/master/LICENSE.txt
+[license-shield]: https://img.shields.io/github/license/iamaydan/IBAR-Trainings.svg?style=for-the-badge
+[license-url]: https://github.com/iamaydan/IBAR-Trainings/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/iamaydan
 [product-screenshot]: https://hothardware.com/ContentImages/NewsItem/48104/content/iphone_ios_12.jpg
