@@ -12,7 +12,7 @@
    <img src="https://www.udemy.com/staticx/udemy/images/v6/default-meta-image.png" alt="Screenshot">
 </p>
 
-This repository includes source codes of four [Udemy](https://www.udemy.com/) courses given by our company. This project is available for anyone on the web and any contribution is greatly welcome. Contributions are what make the open source community such an amazing place to be learn, inspire, and create.
+This repository includes solutions for code challenges of four [udemy](https://www.udemy.com/) trainings (details below). This project is available for anyone on the web and any contribution is greatly welcome. Contributions are what make the open source community such an amazing place to be learn, inspire, and create.
 
 ## Table of Contents
 
