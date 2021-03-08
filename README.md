@@ -14,30 +14,22 @@
 
 This repository includes solutions for code challenges of four [udemy](https://www.udemy.com/) trainings (details below). This project is available for anyone on the web and any contribution is greatly welcome. Contributions are what make the open source community such an amazing place to be learn, inspire, and create.
 
-## Table of Contents
+## 🧾 Table of Contents
 
-### #️⃣ [Training 1](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-1)
+### 1️⃣ Training 1 : [Android Jetpack, Clean Architecture & Testing Masterclass](https://www.udemy.com/course/android-architecture-componentsmvvm-with-dagger-retrofit/)
 
- Course: [Android Jetpack, Clean Architecture & Testing Masterclass](https://www.udemy.com/course/android-architecture-componentsmvvm-with-dagger-retrofit/)
+* [DataBinding Example 1](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-1/BindingDemo1)
 
-### #️⃣ [Training 2](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-2)
+### 2️⃣ Training 2 : [Git Essentials — The step-by-step guide to Git mastery](https://www.udemy.com/course/git-and-github-tutorial/)
 
- Course: [Git Essentials — The step-by-step guide to Git mastery](https://www.udemy.com/course/git-and-github-tutorial/)
+### 3️⃣ Training 3 : [Android Firebase Masterclass - Master Google Firebase](https://www.udemy.com/course/android-firebase-masterclass/)
 
-### #️⃣ [Training 3](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-3)
-
- Course: [Android Firebase Masterclass - Master Google Firebase](https://www.udemy.com/course/android-firebase-masterclass/)
-
-### #️⃣ [Training 4](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-4)
-
- Course: [Android Testing: Unit Tests, Hilt, ViewModels and more!](https://www.udemy.com/course/android-testing/)
+### 4️⃣ Training 4 : [Android Testing: Unit Tests, Hilt, ViewModels and more!](https://www.udemy.com/course/android-testing/)
 
 
-## Getting Started
+## 🚀 Getting Started
 
 To get a local copy and running, follow the steps below.
-
-### Installation
 
    [Clone](https://git-scm.com) the repo 
 
@@ -52,23 +44,23 @@ To get a local copy and running, follow the steps below.
    ```
 
 
-## Usage
+## ⌘ Usage
 
 DRAFT: Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources. 
 
 
-## Acknowledgements
+## 🧠 Acknowledgements
 
 DRAFT: 
 * [Img Shields](https://shields.io)
 
 
-# Contribution
+# 👥 Contribution
 
 Have you spotted a typo, would you like to fix a link, or is there something you’d like to suggest? Browse the source repository of this article and open a pull request. I will do my best to review your proposal in due time.
 
 
-# License
+# ©️ License
 
 Licensed under [Apache-2.0](http://www.apache.org/licenses/LICENSE-2.0).
 
