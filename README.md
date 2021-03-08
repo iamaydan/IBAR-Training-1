@@ -16,21 +16,15 @@ This repository includes solutions for code challenges of four [udemy](https://w
 
 ## 🧾 Table of Contents
 
-### #️⃣ [Training 1](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-1)
+### 1️⃣ Training 1 : [Android Jetpack, Clean Architecture & Testing Masterclass](https://www.udemy.com/course/android-architecture-componentsmvvm-with-dagger-retrofit/)
 
- Course: [Android Jetpack, Clean Architecture & Testing Masterclass](https://www.udemy.com/course/android-architecture-componentsmvvm-with-dagger-retrofit/)
+* [DataBinding Example 1](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-1/BindingDemo1)
 
-### #️⃣ [Training 2](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-2)
+### 2️⃣ Training 2 : [Git Essentials — The step-by-step guide to Git mastery](https://www.udemy.com/course/git-and-github-tutorial/)
 
- Course: [Git Essentials — The step-by-step guide to Git mastery](https://www.udemy.com/course/git-and-github-tutorial/)
+### 3️⃣ Training 3 : [Android Firebase Masterclass - Master Google Firebase](https://www.udemy.com/course/android-firebase-masterclass/)
 
-### #️⃣ [Training 3](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-3)
-
- Course: [Android Firebase Masterclass - Master Google Firebase](https://www.udemy.com/course/android-firebase-masterclass/)
-
-### #️⃣ [Training 4](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-4)
-
- Course: [Android Testing: Unit Tests, Hilt, ViewModels and more!](https://www.udemy.com/course/android-testing/)
+### 4️⃣ Training 4 : [Android Testing: Unit Tests, Hilt, ViewModels and more!](https://www.udemy.com/course/android-testing/)
 
 
 ## 🚀 Getting Started
