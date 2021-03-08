@@ -1,4 +1,4 @@
-package com.anushka.viewmodeldemo1
+package com.example.viewmodeldemo1
 
 import org.junit.Assert.assertEquals
 import org.junit.Test
