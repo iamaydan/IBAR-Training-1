@@ -33,7 +33,7 @@ This repository includes solutions for code challenges of four [udemy](https://w
  Course: [Android Testing: Unit Tests, Hilt, ViewModels and more!](https://www.udemy.com/course/android-testing/)
 
 
-## Getting Started
+## 🚀 Getting Started
 
 To get a local copy and running, follow the steps below.
 
