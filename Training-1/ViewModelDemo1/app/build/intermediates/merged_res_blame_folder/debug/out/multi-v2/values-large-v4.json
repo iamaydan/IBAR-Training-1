@@ -4,7 +4,7 @@
             "outputFile": "/Users/aydan.gozalova/Desktop/GitHub/IBAR-Trainings/Training-1/ViewModelDemo1/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml",
             "map": [
                 {
-                    "source": "/Users/aydan.gozalova/.gradle/caches/transforms-2/files-2.1/63b2029c6f19daa56f6251b8b04ccf8f/appcompat-1.2.0/res/values-large-v4/values-large-v4.xml",
+                    "source": "/Users/aydan.gozalova/.gradle/caches/transforms-2/files-2.1/d478fd87d264bcbb4cbefc372cdf466b/appcompat-1.2.0/res/values-large-v4/values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
