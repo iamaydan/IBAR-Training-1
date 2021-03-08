@@ -31,8 +31,6 @@ This repository includes solutions for code challenges of four [udemy](https://w
 
 To get a local copy and running, follow the steps below.
 
-### Installation
-
    [Clone](https://git-scm.com) the repo 
 
    ```sh
