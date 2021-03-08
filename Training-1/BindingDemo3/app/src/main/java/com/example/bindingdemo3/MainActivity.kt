@@ -1,21 +1,19 @@
-package com.anushka.bindingdemo3
+package com.example.bindingdemo3
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import com.anushka.bindingdemo3.databinding.ActivityMainBinding
+import com.example.bindingdemo3.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        val student = getStudent()
-        binding.nameText.text = student.name
-        binding.emailText.text = student.email
+        binding.student = getStudent()
     }
 
     private fun getStudent(): Student {
-        return Student(1, "Alex", "alex@gmail.com")
+        return Student(1, "Aydan", "aydangozalova@gmail.com")
     }
 }

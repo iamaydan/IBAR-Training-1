@@ -1,4 +1,4 @@
-package com.anushka.bindingdemo3
+package com.example.bindingdemo3
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

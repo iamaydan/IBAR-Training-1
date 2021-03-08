@@ -3,15 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+
+    <data>
+
+        <variable
+            name="student"
+            type="com.example.bindingdemo3.Student" />
+    </data>
+
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context="com.example.bindingdemo3.MainActivity">
 
         <TextView
             android:id="@+id/name_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="@{student.name}"
             android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -23,6 +33,7 @@
             android:id="@+id/email_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="@{student.email}"
             android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
