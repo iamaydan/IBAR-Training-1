@@ -19,6 +19,8 @@ This repository includes solutions for code challenges of four [udemy](https://w
 ### 1️⃣ Training 1 : [Android Jetpack, Clean Architecture & Testing Masterclass](https://www.udemy.com/course/android-architecture-componentsmvvm-with-dagger-retrofit/)
 
 * [DataBinding Example 1](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-1/BindingDemo1)
+* [DataBinding Example 2](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-1/BindingDemo2)
+
 
 ### 2️⃣ Training 2 : [Git Essentials — The step-by-step guide to Git mastery](https://www.udemy.com/course/git-and-github-tutorial/)
 
