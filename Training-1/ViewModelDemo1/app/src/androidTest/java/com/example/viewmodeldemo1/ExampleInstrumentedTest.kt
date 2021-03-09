@@ -1,4 +1,4 @@
-package com.example.viewmodeldemo2
+package com.example.viewmodeldemo1
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
@@ -17,6 +17,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.example.viewmodeldemo2", appContext.packageName)
+        assertEquals("com.anushka.viewmodeldemo1", appContext.packageName)
     }
 }

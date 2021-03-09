@@ -9,12 +9,14 @@ class MainActivityViewModel(startingCount: Int) : ViewModel() {
     val countData: LiveData<Int>
         get() = count
 
+    val inputText = MutableLiveData<String>()
+
     init {
         count.value = startingCount
     }
 
-    fun updateCount(number: Int) {
+    fun updateCount() {
+        val number: Int = inputText.value!!.toInt()
         count.value = (count.value)?.plus(number)
     }
-
 }
