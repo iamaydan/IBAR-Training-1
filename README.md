@@ -16,11 +16,12 @@ This repository includes solutions for code challenges of four [udemy](https://w
 
 ## 🧾 Table of Contents
 
-### 1️⃣ Training 1 : [Android Jetpack, Clean Architecture & Testing Masterclass](https://www.udemy.com/course/android-architecture-componentsmvvm-with-dagger-retrofit/)
+### Training 1 : [Android Jetpack, Clean Architecture & Testing Masterclass](https://www.udemy.com/course/android-architecture-componentsmvvm-with-dagger-retrofit/)
 
 * [DataBinding Example 1](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-1/BindingDemo1)
 * [DataBinding Example 2](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-1/BindingDemo2)
 * [DataBinding Example 3](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-1/BindingDemo3)
+* [Navigation Example 1](https://github.com/iamaydan/IBAR-Training-1/tree/master/NavDemo1)
 * [ViewModel Example 1](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-1/ViewModelDemo1)
 * [ViewModel Example 2](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-1/ViewModelDemo2)
 
