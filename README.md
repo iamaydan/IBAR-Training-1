@@ -25,13 +25,6 @@ This repository includes solutions for code challenges of four [udemy](https://w
 * [ViewModel Example 2](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-1/ViewModelDemo2)
 
 
-### 2️⃣ Training 2 : [Git Essentials — The step-by-step guide to Git mastery](https://www.udemy.com/course/git-and-github-tutorial/)
-
-### 3️⃣ Training 3 : [Android Firebase Masterclass - Master Google Firebase](https://www.udemy.com/course/android-firebase-masterclass/)
-
-### 4️⃣ Training 4 : [Android Testing: Unit Tests, Hilt, ViewModels and more!](https://www.udemy.com/course/android-testing/)
-
-
 ## 🚀 Getting Started
 
 To get a local copy and running, follow the steps below.
