@@ -6,8 +6,10 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.list_item.view.*
 
-class MyRecyclerViewAdapter(private val fruitsList: List<Fruit>) :
-    RecyclerView.Adapter<MyViewHolder>() {
+class MyRecyclerViewAdapter(
+    private val fruitsList: List<Fruit>,
+    private val clickListener: (Fruit) -> Unit
+) : RecyclerView.Adapter<MyViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -21,9 +23,18 @@ class MyRecyclerViewAdapter(private val fruitsList: List<Fruit>) :
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        val fruit = fruitsList[position]
-        holder.view.name_text_view.text = fruit.name
+        holder.bind(fruitsList[position], clickListener)
     }
 }
 
-class MyViewHolder(val view: View) : RecyclerView.ViewHolder(view)
+class MyViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
+
+    fun bind(fruit: Fruit, clickListener: (Fruit) -> Unit) {
+
+        view.name_text_view.text = fruit.name
+        view.setOnClickListener {
+            clickListener(fruit)
+        }
+
+    }
+}
