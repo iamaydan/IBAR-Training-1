@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import com.anushka.navdemo5.databinding.FragmentWelcomeBinding
 
 class WelcomeFragment : Fragment() {
@@ -17,6 +18,15 @@ class WelcomeFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_welcome, container, false)
+        val name = arguments!!.getString("input_name")
+        val email = arguments!!.getString("input_email")
+
+        binding.nameText.text = name
+        binding.mailText.text = email
+
+        binding.nextButton.setOnClickListener {
+            it.findNavController().navigate(R.id.action_welcomeFragment_to_termsFragment)
+        }
         return binding.root
     }
 }
