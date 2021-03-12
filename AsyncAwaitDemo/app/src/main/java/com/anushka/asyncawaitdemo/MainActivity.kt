@@ -1,12 +1,11 @@
 package com.anushka.asyncawaitdemo
-import androidx.appcompat.app.AppCompatActivity
+
 import android.os.Bundle
 import android.util.Log
-import kotlinx.coroutines.CoroutineScope
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import kotlinx.coroutines.*
 import kotlinx.coroutines.Dispatchers.IO
-import kotlinx.coroutines.async
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
 
 
 class MainActivity : AppCompatActivity() {
@@ -15,32 +14,32 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        CoroutineScope(IO).launch {
-            Log.i("MyTag","Calculation started....")
+        CoroutineScope(Dispatchers.Main).launch {
+            Log.i("MyTag", "Calculation started....")
 
-            val stock1 = async {
+            val stock1 = async(IO) {
                 getStock1()
             }
-            val stock2 = async {
+            val stock2 = async(IO) {
                 getStock2()
             }
 
-            val total = stock1.await()+stock2.await()
+            val total = stock1.await() + stock2.await()
+            Toast.makeText(applicationContext, "Total : $total", Toast.LENGTH_SHORT).show()
 
-            Log.i("MyTag","Total is $total")
         }
 
     }
 }
 
-private suspend fun getStock1() : Int {
+private suspend fun getStock1(): Int {
     delay(10000)
-    Log.i("MyTag"," stock 1 returned ")
+    Log.i("MyTag", " stock 1 returned ")
     return 55000
 }
 
-private suspend fun getStock2() : Int {
+private suspend fun getStock2(): Int {
     delay(8000)
-    Log.i("MyTag"," stock 2 returned ")
+    Log.i("MyTag", " stock 2 returned ")
     return 35000
 }
