@@ -16,7 +16,8 @@ class MainActivityViewModel(startingCount: Int) : ViewModel() {
     }
 
     fun updateCount() {
-        val number: Int = inputText.value!!.toInt()
-        count.value = (count.value)?.plus(number)
+        val number: Int? = inputText.value?.toInt()
+        count.value = (count.value)?.plus(number ?: 0)
+
     }
 }
