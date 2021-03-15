@@ -14,13 +14,13 @@ import kotlinx.coroutines.launch
 class SubscriberViewModel(private val repository: SubscriberRepository) : ViewModel(), Observable {
 
     val subscribers = repository.subscribers
-    private var SAVE = "Save"
     private var isUpdateOrDelete = false
-    private var UPDATE = R.string.update.toString()
-    private var DELETE = R.string.delete.toString()
-    private var CLEAR_ALL = R.string.clear_all.toString()
-    private var ERROR_MESSAGE = R.string.error_message.toString()
     private lateinit var subscriberToUpdateOrDelete: Subscriber
+    private var SAVE = "Save"
+    private var UPDATE = "Update"
+    private var DELETE = "Delete"
+    private var CLEAR_ALL = "Clear All"
+    private var ERROR_MESSAGE = "Error Occurred"
 
     @Bindable
     val inputName = MutableLiveData<String>()

@@ -14,15 +14,16 @@
         android:layout_height="match_parent"
         android:layout_margin="16dp"
         android:orientation="vertical"
+        android:padding="16dp"
         tools:context=".MainActivity">
 
-        <androidx.appcompat.widget.AppCompatEditText
+
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/name_text"
             style="@style/Widget.AppCompat.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:layout_marginBottom="5dp"
+            android:layout_marginVertical="10dp"
             android:ems="10"
             android:hint="@string/subscriber_s_name"
             android:inputType="textPersonName"
@@ -34,9 +35,6 @@
             style="@style/Widget.AppCompat.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
             android:ems="10"
             android:hint="@string/subscriber_s_email"
             android:inputType="textPersonName"
@@ -46,6 +44,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
             android:orientation="horizontal">
 
             <androidx.appcompat.widget.AppCompatButton

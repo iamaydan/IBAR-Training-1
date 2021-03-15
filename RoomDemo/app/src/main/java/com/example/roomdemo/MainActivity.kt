@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var subscriberViewModel: SubscriberViewModel
+    private lateinit var adapter: MyRecyclerViewAdapter
     private var TAG = "MyTag"
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,12 +30,11 @@ class MainActivity : AppCompatActivity() {
         subscriberViewModel = ViewModelProvider(this, factory).get(SubscriberViewModel::class.java)
         binding.myViewModel = subscriberViewModel
         binding.lifecycleOwner = this
-
         initRecyclerView()
 
         subscriberViewModel.message.observe(this, { it ->
             it.getContentIfNotHandled()?.let {
-                Toast.makeText(this, it, Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, it, Toast.LENGTH_LONG).show()
             }
         })
 
@@ -42,17 +42,20 @@ class MainActivity : AppCompatActivity() {
 
     private fun initRecyclerView() {
         binding.subscriberRecyclerView.layoutManager = LinearLayoutManager(this)
+        adapter =
+            MyRecyclerViewAdapter { selectedItem: Subscriber -> listItemClicked(selectedItem) }
+        binding.subscriberRecyclerView.adapter = adapter
         displaySubscribersList()
     }
 
     private fun displaySubscribersList() {
         subscriberViewModel.subscribers.observe(this, {
             Log.i(TAG, it.toString())
-            binding.subscriberRecyclerView.adapter = MyRecyclerViewAdapter(
-                it
-            ) { selectedItem: Subscriber -> listItemClicked(selectedItem) }
+            adapter.setList(it)
+            adapter.notifyDataSetChanged()
         })
     }
+
 
     private fun listItemClicked(subscriber: Subscriber) {
         //Toast.makeText(this,"selected name is ${subscriber.name}",Toast.LENGTH_SHORT).show()
