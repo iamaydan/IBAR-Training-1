@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">NotificationDemo</string>
+    <string name="send_notification">Send notification</string>
+    <string name="settings">Settings</string>
+    <string name="textview">TextView</string>
+    <string name="more_details">More Details</string>
 </resources>
