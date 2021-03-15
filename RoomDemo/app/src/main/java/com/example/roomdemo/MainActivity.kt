@@ -5,7 +5,6 @@ import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.roomdemo.databinding.ActivityMainBinding
@@ -17,10 +16,10 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var subscriberViewModel: SubscriberViewModel
+    private var TAG = "MyTag"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
         val dao = SubscriberDatabase.getInstance(application).subscriberDAO
@@ -33,6 +32,12 @@ class MainActivity : AppCompatActivity() {
 
         initRecyclerView()
 
+        subscriberViewModel.message.observe(this, { it ->
+            it.getContentIfNotHandled()?.let {
+                Toast.makeText(this, it, Toast.LENGTH_SHORT).show()
+            }
+        })
+
     }
 
     private fun initRecyclerView() {
@@ -41,8 +46,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun displaySubscribersList() {
-        subscriberViewModel.subscribers.observe(this, Observer {
-            Log.i("MYTAG", it.toString())
+        subscriberViewModel.subscribers.observe(this, {
+            Log.i(TAG, it.toString())
             binding.subscriberRecyclerView.adapter = MyRecyclerViewAdapter(
                 it
             ) { selectedItem: Subscriber -> listItemClicked(selectedItem) }
@@ -50,7 +55,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun listItemClicked(subscriber: Subscriber) {
-        Toast.makeText(this, "selected name is ${subscriber.name}", Toast.LENGTH_LONG).show()
+        //Toast.makeText(this,"selected name is ${subscriber.name}",Toast.LENGTH_SHORT).show()
         subscriberViewModel.initUpdateAndDelete(subscriber)
     }
 }

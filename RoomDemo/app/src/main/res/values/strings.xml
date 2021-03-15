@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">RoomDemo</string>
+    <string name="save">Save</string>
+    <string name="update">Update</string>
+    <string name="close">Close</string>
+    <string name="delete">Delete</string>
+    <string name="clear_all">Clear all</string>
+    <string name="error_message">Error Occurred</string>
     <string name="subscriber_s_email">Subscriber\'s email</string>
     <string name="subscriber_s_name">Subscriber\'s name</string>
 </resources>
