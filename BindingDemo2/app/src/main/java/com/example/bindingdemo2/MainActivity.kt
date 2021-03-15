@@ -20,10 +20,10 @@ class MainActivity : AppCompatActivity() {
         binding.apply {
             if (progressBar.visibility == View.GONE) {
                 progressBar.visibility = View.VISIBLE
-                controlButton.text = "Stop"
+                controlButton.text = getString(R.string.stop)
             } else {
                 progressBar.visibility = View.GONE
-                controlButton.text = "Start"
+                controlButton.text = getString(R.string.start)
             }
         }
 
