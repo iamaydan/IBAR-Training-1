@@ -3,13 +3,11 @@ package com.example.workmanagerdemo
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.Observer
 import androidx.work.Constraints
 import androidx.work.Data
 import androidx.work.OneTimeWorkRequest
 import androidx.work.WorkManager
 import kotlinx.android.synthetic.main.activity_main.*
-
 
 class MainActivity : AppCompatActivity() {
 
@@ -40,9 +38,24 @@ class MainActivity : AppCompatActivity() {
                 .setConstraints(constraints)
                 .setInputData(data)
                 .build()
-        workManager.enqueue(uploadRequest)
+
+        val filteringRequest = OneTimeWorkRequest.Builder(FilteringWorker::class.java)
+                .build()
+        val compressingRequest = OneTimeWorkRequest.Builder(CompressingWorker::class.java)
+                .build()
+        val downloadingWorker = OneTimeWorkRequest.Builder(DownloadingWorker::class.java)
+                .build()
+        val parallelWorks = mutableListOf<OneTimeWorkRequest>()
+        parallelWorks.add(downloadingWorker)
+        parallelWorks.add(filteringRequest)
+        workManager
+                .beginWith(parallelWorks)
+                .then(compressingRequest)
+                .then(uploadRequest)
+                .enqueue()
+
         workManager.getWorkInfoByIdLiveData(uploadRequest.id)
-                .observe(this, Observer {
+                .observe(this, {
                     textView.text = it.state.name
                     if (it.state.isFinished) {
                         val data = it.outputData
