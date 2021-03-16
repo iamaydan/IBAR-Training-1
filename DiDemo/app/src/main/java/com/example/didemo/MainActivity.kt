@@ -9,14 +9,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+//        val smartPhone =
+//                SmartPhone(
+//                        Battery(),
+//                        SIMCard(ServiceProvider()),
+//                        MemoryCard()
+//                )
+//                        .makeACallWithRecording()
 
-        SmartPhone(
-                Battery(),
-                SIMCard(ServiceProvider()),
-                MemoryCard()
-        )
+        DaggerSmartPhoneComponent.create()
+                .getSmartPhone()
                 .makeACallWithRecording()
-
-
     }
 }
