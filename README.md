@@ -31,11 +31,11 @@ This repository includes solutions for Android Jetpack, Clean Architecture & Tes
 * [Notification Example](https://github.com/iamaydan/IBAR-Training-1/tree/master/NotificationDemo)
 * [RecyclerView Example](https://github.com/iamaydan/IBAR-Training-1/tree/master/RecyclerViewDemo1)
 * [Retrofit Example](https://github.com/iamaydan/IBAR-Training-1/tree/master/RetrofitDemo)
-* [Navigation Example 1](https://github.com/iamaydan/IBAR-Training-1/tree/master/RoomDemo)
+* [Room Example](https://github.com/iamaydan/IBAR-Training-1/tree/master/RoomDemo)
 * [ViewModel Example 1](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-1/ViewModelDemo1)
 * [ViewModel Example 2](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-1/ViewModelDemo2)
-* [ViewModel Example 2](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-1/ViewModelScopeDemo)
-* [ViewModel Example 2](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-1/WorkManagerDemo)
+* [ViewModelScope Example](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-1/ViewModelScopeDemo)
+* [WorkManager Example](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-1/WorkManagerDemo)
 
 
 ## 🚀 Getting Started
