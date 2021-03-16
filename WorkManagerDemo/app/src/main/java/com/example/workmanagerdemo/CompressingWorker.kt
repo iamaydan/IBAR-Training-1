@@ -11,7 +11,7 @@ class CompressingWorker(context: Context, params: WorkerParameters) : Worker(con
     override fun doWork(): Result {
         return try {
             for (i in 0..300) {
-                Log.i("MyTag", "Compresing $i")
+                Log.i("MyTag", "Compressing $i")
             }
 
             Result.success()
