@@ -12,18 +12,30 @@
    <img src="https://www.udemy.com/staticx/udemy/images/v6/default-meta-image.png" alt="Screenshot">
 </p>
 
-This repository includes solutions for code challenges of four [udemy](https://www.udemy.com/) trainings (details below). This project is available for anyone on the web and any contribution is greatly welcome. Contributions are what make the open source community such an amazing place to be learn, inspire, and create.
+This repository includes solutions for Android Jetpack, Clean Architecture & Testing Masterclass [udemy](https://www.udemy.com/) course by Anushka Madusanka (details below). This project is available for anyone on the web and any contribution is greatly welcome. Contributions are what make the open source community such an amazing place to be learn, inspire, and create.
 
 ## 🧾 Table of Contents
 
-### Training 1 : [Android Jetpack, Clean Architecture & Testing Masterclass](https://www.udemy.com/course/android-architecture-componentsmvvm-with-dagger-retrofit/)
+### [Android Jetpack, Clean Architecture & Testing Masterclass](https://www.udemy.com/course/android-architecture-componentsmvvm-with-dagger-retrofit/)
 
+* [AsyncAwait Example](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-1/AsyncAwaitDemo)
 * [DataBinding Example 1](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-1/BindingDemo1)
 * [DataBinding Example 2](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-1/BindingDemo2)
 * [DataBinding Example 3](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-1/BindingDemo3)
+* [Coroutines Example 1](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-1/CoroutinesDemo1)
+* [Coroutines Example 2](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-1/CoroutinesDemo2)
+* [Dependency Injection Example](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-1/DiDemo)
+* [LiveData Example](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-1/LiveDataDemo)
 * [Navigation Example 1](https://github.com/iamaydan/IBAR-Training-1/tree/master/NavDemo1)
+* [Navigation Example 2](https://github.com/iamaydan/IBAR-Training-1/tree/master/NavDemo5)
+* [Notification Example](https://github.com/iamaydan/IBAR-Training-1/tree/master/NotificationDemo)
+* [RecyclerView Example](https://github.com/iamaydan/IBAR-Training-1/tree/master/RecyclerViewDemo1)
+* [Retrofit Example](https://github.com/iamaydan/IBAR-Training-1/tree/master/RetrofitDemo)
+* [Navigation Example 1](https://github.com/iamaydan/IBAR-Training-1/tree/master/RoomDemo)
 * [ViewModel Example 1](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-1/ViewModelDemo1)
 * [ViewModel Example 2](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-1/ViewModelDemo2)
+* [ViewModel Example 2](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-1/ViewModelScopeDemo)
+* [ViewModel Example 2](https://github.com/iamaydan/IBAR-Trainings/tree/master/Training-1/WorkManagerDemo)
 
 
 ## 🚀 Getting Started
