@@ -41,12 +41,12 @@ class CalcViewModel(
 
     }
 
-    private fun calculateArea(radius: Double) {
+    fun calculateArea(radius: Double) {
         val calculatedArea = calculations.calculateArea(radius)
         area.value = calculatedArea.toString()
     }
 
-    private fun calculateCircumference(radius: Double) {
+    fun calculateCircumference(radius: Double) {
         val calculatedCircumference = calculations.calculateCircumference(radius)
         circumference.value = calculatedCircumference.toString()
     }
