@@ -9,6 +9,6 @@ class ServiceProvider @Inject constructor() {
     }
 
     fun getServiceProvider() {
-        Log.i("MyTag", "Service provider connected")
+        Log.i("MyTag", "Service Provider Connected")
     }
 }

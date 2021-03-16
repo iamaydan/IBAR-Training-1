@@ -2,12 +2,15 @@ package com.example.didemo
 
 import android.util.Log
 import javax.inject.Inject
+import javax.inject.Singleton
 
+@Singleton
 class SmartPhone @Inject constructor(
-    val battery: Battery,
-    val simCard: SIMCard,
-    val memoryCard: MemoryCard
+    private val battery: Battery,
+    private val simCard: SIMCard,
+    private val memoryCard: MemoryCard
 ) {
+
     init {
         battery.getPower()
         simCard.getConnection()
@@ -19,4 +22,3 @@ class SmartPhone @Inject constructor(
         Log.i("MyTag", "Calling.....")
     }
 }
-
