@@ -10,17 +10,17 @@ import com.anushka.tmdbclient.databinding.ListItemBinding
 import com.bumptech.glide.Glide
 
 
-class MovieAdapter():RecyclerView.Adapter<MyViewHolder>() {
+class MovieAdapter() : RecyclerView.Adapter<MyViewHolder>() {
     private val movieList = ArrayList<Movie>()
 
-    fun setList(movies:List<Movie>){
-         movieList.clear()
-         movieList.addAll(movies)
+    fun setList(movies: List<Movie>) {
+        movieList.clear()
+        movieList.addAll(movies)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
-        val binding : ListItemBinding = DataBindingUtil.inflate(
+        val binding: ListItemBinding = DataBindingUtil.inflate(
             layoutInflater,
             R.layout.list_item,
             parent,
@@ -34,23 +34,22 @@ class MovieAdapter():RecyclerView.Adapter<MyViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-       holder.bind(movieList[position])
+        holder.bind(movieList[position])
     }
 }
 
 
+class MyViewHolder(val binding: ListItemBinding) :
+    RecyclerView.ViewHolder(binding.root) {
 
-class MyViewHolder(val binding: ListItemBinding):
-RecyclerView.ViewHolder(binding.root){
-
-   fun bind(movie:Movie){
+    fun bind(movie: Movie) {
         binding.titleTextView.text = movie.title
         binding.descriptionTextView.text = movie.overview
-        val posterURL = "https://image.tmdb.org/t/p/w500"+movie.posterPath
+        val posterURL = "https://image.tmdb.org/t/p/w500" + movie.posterPath
         Glide.with(binding.imageView.context)
             .load(posterURL)
             .into(binding.imageView)
 
-   }
+    }
 
 }

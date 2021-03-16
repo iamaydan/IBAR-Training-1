@@ -9,8 +9,8 @@ interface ArtistSubComponent {
     fun inject(artistActivity: ArtistActivity)
 
     @Subcomponent.Factory
-    interface Factory{
-        fun create():ArtistSubComponent
+    interface Factory {
+        fun create(): ArtistSubComponent
     }
 
 }

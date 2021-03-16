@@ -7,10 +7,9 @@ import com.anushka.tmdbclient.presentation.di.artist.ArtistSubComponent
 import com.anushka.tmdbclient.presentation.di.core.*
 import com.anushka.tmdbclient.presentation.di.movie.MovieSubComponent
 import com.anushka.tmdbclient.presentation.di.tvshow.TvShowSubComponent
-import javax.inject.Inject
 
 class App : Application(), Injector {
-private lateinit var appComponent:AppComponent
+    private lateinit var appComponent: AppComponent
 
     override fun onCreate() {
         super.onCreate()
@@ -27,7 +26,7 @@ private lateinit var appComponent:AppComponent
     }
 
     override fun createTvShowSubComponent(): TvShowSubComponent {
-       return appComponent.tvShowSubComponent().create()
+        return appComponent.tvShowSubComponent().create()
     }
 
     override fun createArtistSubComponent(): ArtistSubComponent {

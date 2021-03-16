@@ -12,7 +12,7 @@ class MovieCacheDataSourceImpl :
     }
 
     override suspend fun saveMoviesToCache(movies: List<Movie>) {
-       movieList.clear()
-       movieList = ArrayList(movies)
+        movieList.clear()
+        movieList = ArrayList(movies)
     }
 }

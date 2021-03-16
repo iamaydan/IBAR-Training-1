@@ -14,19 +14,20 @@ import javax.inject.Singleton
 class DataBaseModule {
     @Singleton
     @Provides
-    fun provideMovieDataBase(context: Context):TMDBDatabase{
-     return Room.databaseBuilder(context,TMDBDatabase::class.java,"tmdbclient")
-         .build()
+    fun provideMovieDataBase(context: Context): TMDBDatabase {
+        return Room.databaseBuilder(context, TMDBDatabase::class.java, "tmdbclient")
+            .build()
     }
+
     @Singleton
     @Provides
-    fun provideMovieDao(tmdbDatabase: TMDBDatabase):MovieDao{
+    fun provideMovieDao(tmdbDatabase: TMDBDatabase): MovieDao {
         return tmdbDatabase.movieDao()
     }
 
     @Singleton
     @Provides
-    fun provideTvDao(tmdbDatabase: TMDBDatabase):TvShowDao{
+    fun provideTvDao(tmdbDatabase: TMDBDatabase): TvShowDao {
         return tmdbDatabase.tvDao()
     }
 
@@ -35,9 +36,6 @@ class DataBaseModule {
     fun provideArtistDao(tmdbDatabase: TMDBDatabase): ArtistDao {
         return tmdbDatabase.artistDao()
     }
-
-
-
 
 
 }

@@ -7,10 +7,10 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class ArtistLocalDataSourceImpl(private val artistDao:ArtistDao):
+class ArtistLocalDataSourceImpl(private val artistDao: ArtistDao) :
     ArtistLocalDataSource {
     override suspend fun getArtistsFromDB(): List<Artist> {
-       return artistDao.getArtists()
+        return artistDao.getArtists()
     }
 
     override suspend fun saveArtistsToDB(artists: List<Artist>) {
@@ -20,8 +20,8 @@ class ArtistLocalDataSourceImpl(private val artistDao:ArtistDao):
     }
 
     override suspend fun clearAll() {
-       CoroutineScope(Dispatchers.IO).launch {
-           artistDao.deleteAllArtists()
-       }
+        CoroutineScope(Dispatchers.IO).launch {
+            artistDao.deleteAllArtists()
+        }
     }
 }

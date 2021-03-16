@@ -7,8 +7,8 @@ import retrofit2.Response
 
 class ArtistRemoteDataSourceImpl(
     private val tmdbService: TMDBService,
-    private val apiKey:String
-): ArtistRemoteDatasource {
+    private val apiKey: String
+) : ArtistRemoteDatasource {
     override suspend fun getArtists()
             : Response<ArtistList> = tmdbService.getPopularArtists(apiKey)
 

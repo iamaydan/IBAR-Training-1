@@ -8,7 +8,7 @@ import com.anushka.tmdbclient.domain.usecase.UpdateArtistsUseCase
 class ArtistViewModel(
     private val getArtistsUseCase: GetArtistsUseCase,
     private val updateArtistsUseCase: UpdateArtistsUseCase
-): ViewModel() {
+) : ViewModel() {
 
     fun getArtists() = liveData {
         val artistList = getArtistsUseCase.execute()

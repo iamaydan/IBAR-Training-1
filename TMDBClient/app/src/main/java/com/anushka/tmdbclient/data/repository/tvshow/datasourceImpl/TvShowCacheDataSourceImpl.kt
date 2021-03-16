@@ -12,7 +12,7 @@ class TvShowCacheDataSourceImpl :
     }
 
     override suspend fun saveTvShowsToCache(tvShows: List<TvShow>) {
-       tvShowList.clear()
-       tvShowList = ArrayList(tvShows)
+        tvShowList.clear()
+        tvShowList = ArrayList(tvShows)
     }
 }

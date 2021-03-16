@@ -5,7 +5,7 @@ import com.anushka.tmdbclient.presentation.di.movie.MovieSubComponent
 import com.anushka.tmdbclient.presentation.di.tvshow.TvShowSubComponent
 
 interface Injector {
-   fun createMovieSubComponent():MovieSubComponent
-   fun createTvShowSubComponent():TvShowSubComponent
-   fun createArtistSubComponent():ArtistSubComponent
+    fun createMovieSubComponent(): MovieSubComponent
+    fun createTvShowSubComponent(): TvShowSubComponent
+    fun createArtistSubComponent(): ArtistSubComponent
 }

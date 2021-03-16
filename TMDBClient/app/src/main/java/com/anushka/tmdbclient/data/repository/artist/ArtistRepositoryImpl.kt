@@ -6,7 +6,6 @@ import com.anushka.tmdbclient.data.repository.artist.datasource.ArtistCacheDataS
 import com.anushka.tmdbclient.data.repository.artist.datasource.ArtistLocalDataSource
 import com.anushka.tmdbclient.data.repository.artist.datasource.ArtistRemoteDatasource
 import com.anushka.tmdbclient.domain.repository.ArtistRepository
-import java.lang.Exception
 
 class ArtistRepositoryImpl(
     private val artistRemoteDatasource: ArtistRemoteDatasource,
@@ -14,7 +13,7 @@ class ArtistRepositoryImpl(
     private val artistCacheDataSource: ArtistCacheDataSource
 ) : ArtistRepository {
     override suspend fun getArtists(): List<Artist>? {
-       return getArtistsFromCache()
+        return getArtistsFromCache()
     }
 
     override suspend fun updateArtists(): List<Artist>? {
@@ -30,7 +29,7 @@ class ArtistRepositoryImpl(
         try {
             val response = artistRemoteDatasource.getArtists()
             val body = response.body()
-            if(body!=null){
+            if (body != null) {
                 artistList = body.artists
             }
         } catch (exception: Exception) {
@@ -39,44 +38,39 @@ class ArtistRepositoryImpl(
         return artistList
     }
 
-    suspend fun getArtistsFromDB():List<Artist>{
+    suspend fun getArtistsFromDB(): List<Artist> {
         lateinit var artistList: List<Artist>
         try {
-           artistList = artistLocalDataSource.getArtistsFromDB()
+            artistList = artistLocalDataSource.getArtistsFromDB()
         } catch (exception: Exception) {
             Log.i("MyTag", exception.message.toString())
         }
-        if(artistList.size>0){
+        if (artistList.size > 0) {
             return artistList
-        }else{
-            artistList= getArtistsFromAPI()
+        } else {
+            artistList = getArtistsFromAPI()
             artistLocalDataSource.saveArtistsToDB(artistList)
         }
 
         return artistList
     }
 
-    suspend fun getArtistsFromCache():List<Artist>{
+    suspend fun getArtistsFromCache(): List<Artist> {
         lateinit var artistList: List<Artist>
         try {
-            artistList =artistCacheDataSource.getArtistsFromCache()
+            artistList = artistCacheDataSource.getArtistsFromCache()
         } catch (exception: Exception) {
             Log.i("MyTag", exception.message.toString())
         }
-        if(artistList.size>0){
+        if (artistList.size > 0) {
             return artistList
-        }else{
-            artistList=getArtistsFromDB()
+        } else {
+            artistList = getArtistsFromDB()
             artistCacheDataSource.saveArtistsToCache(artistList)
         }
 
         return artistList
     }
-
-
-
-
-
 
 
 }

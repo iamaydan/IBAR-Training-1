@@ -6,7 +6,6 @@ import com.anushka.tmdbclient.data.repository.tvshow.datasource.TvShowCacheDataS
 import com.anushka.tmdbclient.data.repository.tvshow.datasource.TvShowLocalDataSource
 import com.anushka.tmdbclient.data.repository.tvshow.datasource.TvShowRemoteDatasource
 import com.anushka.tmdbclient.domain.repository.TvShowRepository
-import java.lang.Exception
 
 class TvShowRepositoryImpl(
     private val tvShowRemoteDatasource: TvShowRemoteDatasource,
@@ -14,7 +13,7 @@ class TvShowRepositoryImpl(
     private val tvShowCacheDataSource: TvShowCacheDataSource
 ) : TvShowRepository {
     override suspend fun getTvShows(): List<TvShow>? {
-       return getTvShowsFromCache()
+        return getTvShowsFromCache()
     }
 
     override suspend fun updateTvShows(): List<TvShow>? {
@@ -30,7 +29,7 @@ class TvShowRepositoryImpl(
         try {
             val response = tvShowRemoteDatasource.getTvShows()
             val body = response.body()
-            if(body!=null){
+            if (body != null) {
                 tvShowList = body.tvShows
             }
         } catch (exception: Exception) {
@@ -39,44 +38,39 @@ class TvShowRepositoryImpl(
         return tvShowList
     }
 
-    suspend fun getTvShowsFromDB():List<TvShow>{
+    suspend fun getTvShowsFromDB(): List<TvShow> {
         lateinit var tvShowsList: List<TvShow>
         try {
-           tvShowsList = tvShowLocalDataSource.getTvShowsFromDB()
+            tvShowsList = tvShowLocalDataSource.getTvShowsFromDB()
         } catch (exception: Exception) {
             Log.i("MyTag", exception.message.toString())
         }
-        if(tvShowsList.size>0){
+        if (tvShowsList.size > 0) {
             return tvShowsList
-        }else{
-            tvShowsList=getTvShowsFromAPI()
+        } else {
+            tvShowsList = getTvShowsFromAPI()
             tvShowLocalDataSource.saveTvShowsToDB(tvShowsList)
         }
 
         return tvShowsList
     }
 
-    suspend fun getTvShowsFromCache():List<TvShow>{
+    suspend fun getTvShowsFromCache(): List<TvShow> {
         lateinit var tvShowsList: List<TvShow>
         try {
-            tvShowsList =tvShowCacheDataSource.getTvShowsFromCache()
+            tvShowsList = tvShowCacheDataSource.getTvShowsFromCache()
         } catch (exception: Exception) {
             Log.i("MyTag", exception.message.toString())
         }
-        if(tvShowsList.size>0){
+        if (tvShowsList.size > 0) {
             return tvShowsList
-        }else{
-            tvShowsList=getTvShowsFromDB()
+        } else {
+            tvShowsList = getTvShowsFromDB()
             tvShowCacheDataSource.saveTvShowsToCache(tvShowsList)
         }
 
         return tvShowsList
     }
-
-
-
-
-
 
 
 }

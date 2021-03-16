@@ -32,6 +32,4 @@ interface TMDBService {
     ): Response<ArtistList>
 
 
-
-
 }
