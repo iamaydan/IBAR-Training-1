@@ -34,19 +34,19 @@ class CalcViewModel(
             }
 
         } catch (e: Exception) {
-            Log.i("MYTAG", e.message.toString())
+            Log.i("MyTag", e.message.toString())
             area.value = null
             circumference.value = null
         }
 
     }
 
-    fun calculateArea(radius: Double) {
+    private fun calculateArea(radius: Double) {
         val calculatedArea = calculations.calculateArea(radius)
         area.value = calculatedArea.toString()
     }
 
-    fun calculateCircumference(radius: Double) {
+    private fun calculateCircumference(radius: Double) {
         val calculatedCircumference = calculations.calculateCircumference(radius)
         circumference.value = calculatedCircumference.toString()
     }
